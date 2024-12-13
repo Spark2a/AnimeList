@@ -5,7 +5,7 @@ import Details from "./pages/Details";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/AnimeList"> {/*basename */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/list" element={<List />} />
