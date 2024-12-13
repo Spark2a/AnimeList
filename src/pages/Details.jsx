@@ -54,14 +54,14 @@ const Details = () => {
   <div className="row justify-content-center">
     <div className="col-md-8">
       <div className="card mb-4">
-        {/* Image de l'animé avec une hauteur fixe et objectFit pour éviter l'étirement */}
+        {/* Image de l'animé  */}
         <img
           src={anime.images.jpg.image_url}
           className="card-img-top"
           alt={anime.title}
           style={{
-            height: "300px",  // Hauteur fixe pour limiter la taille de l'image
-            objectFit: "cover",  // Garder l'image dans le cadre sans la déformer
+            height: "300px",  
+            objectFit: "cover",  
           }}
         />
         <div className="card-body">
