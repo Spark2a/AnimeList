@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchAnimes } from "../api";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function Home() {
   const [animes, setAnimes] = useState([]); //initialise l’état animes
@@ -16,28 +17,8 @@ function Home() {
   return (
     <div>
       {/* Navbar */}
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container">
-          <Link className="navbar-brand" to="/">
-            MyAnimeList
-          </Link>
-          <div>
-            <ul className="navbar-nav me-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/list">
-                  List
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
 
+     <Navbar/>
       {/* Page Title */}
       <div className="container my-4">
         <h1 className="text-center">My Anime List</h1>
