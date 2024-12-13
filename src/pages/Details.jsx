@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchAnimeDetails } from "../api"; 
+import Navbar from "../components/Navbar";
 
 const Details = () => {
   const { id } = useParams(); // Récupérer l'ID de l'animé depuis l'URL
@@ -26,27 +27,8 @@ const Details = () => {
   return (
     <div>
   {/* Navbar */}
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div className="container">
-      <Link className="navbar-brand" to="/">
-        MyAnimeList
-      </Link>
-      <div>
-        <ul className="navbar-nav me-auto">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/list">
-              List
-            </Link>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <Navbar/>
+
 
   {/* Détails de l'animé */}
   <h1 className="text-center my-4">{anime.title}</h1>
