@@ -8,7 +8,7 @@ function Home() {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetchAnimes();
-      setAnimes(data.slice(0, 16)); // Limite à 10 animés
+      setAnimes(data.slice(0, 16)); // Limite à 16 animés
     };
     fetchData();
   }, []);
