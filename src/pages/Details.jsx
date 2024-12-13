@@ -20,7 +20,7 @@ const Details = () => {
   }, [id]); // Réexécuter chaque fois que l'ID change
 
   if (!anime) {
-    return <div>Loading...</div>; // Afficher un loader pendant que les données sont récupérées
+    return <div>Loading...</div>; // Afficher un loader 
   }
 
   return (
